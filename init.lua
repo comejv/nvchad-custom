@@ -4,5 +4,3 @@ vim.cmd [[
   set shiftwidth=4 smarttab
 ]]
 
-require('custom.clang_format_config').setup()
-

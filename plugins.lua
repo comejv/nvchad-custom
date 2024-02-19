@@ -50,10 +50,6 @@ local plugins = {
             require "custom.configs.conform"
         end,
     },
-    {
-        "rhysd/vim-clang-format",
-        ft = {"c", "cpp", "objc", "objcpp"}, -- lazy-load on C/C++ file types
-    },
     -- To make a plugin not be loaded
     -- {
     --   "NvChad/nvim-colorizer.lua",
