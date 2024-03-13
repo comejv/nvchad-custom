@@ -47,10 +47,10 @@ local plugins = {
     end,
   },
   {
-    "folke/trouble.nvim",
-    dependencies = { "nvim-tree/nvim-web-devicons" },
-    opts = {},
-    lazy = false,
+    "nvim-treesitter/nvim-treesitter-context",
+    ft = "c",
+    enabled = true,
+    opts = { mode = "cursor", max_lines = 5 },
   },
   -- To make a plugin not be loaded
   -- {
