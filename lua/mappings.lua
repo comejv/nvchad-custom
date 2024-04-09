@@ -8,10 +8,11 @@ map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 
 map("n", "<leader>h", function()
-    require("nvchad.term").new { pos = "sp", size = 0.4 } -- changed to 40%
+  require("nvchad.term").new { pos = "sp", size = 0.4 } -- changed to 40%
 end, { desc = "Terminal New horizontal term" })
 
 map("n", "<leader>v", function()
-    require("nvchad.term").new { pos = "vsp", size = 0.3 }
+  require("nvchad.term").new { pos = "vsp", size = 0.3 }
 end, { desc = "Terminal New vertical window" })
--- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+
+map("n", "<leader>e", vim.diagnostic.open_float)
