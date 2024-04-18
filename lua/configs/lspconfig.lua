@@ -12,3 +12,5 @@ lspconfig.clangd.setup {
     "--offset-encoding=utf-16",
   },
 }
+
+lspconfig.jdtls.setup {}
