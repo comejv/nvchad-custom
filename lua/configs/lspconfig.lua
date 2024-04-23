@@ -6,6 +6,7 @@ local lspconfig = require "lspconfig"
 
 lspconfig.clangd.setup {
   on_attach = on_attach,
+  on_init = on_init,
   capabilities = capabilities,
   cmd = {
     "clangd",
