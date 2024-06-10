@@ -14,7 +14,6 @@ return {
         "stylua",
         "clangd",
         "clang-format",
-        "jdtls",
       },
       automatic_installation = true,
     },
