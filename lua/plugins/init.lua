@@ -51,4 +51,9 @@ return {
     event = { "BufNewFile", "BufReadPost" },
     opts = { mode = "topline" },
   },
+  {
+    "numToStr/Comment.nvim",
+    opts = {},
+    event = { "BufNewFile", "BufReadPost" },
+  },
 }
