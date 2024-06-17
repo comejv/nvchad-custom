@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    event = "BufWritePre", -- uncomment for format on save
+    event = "BufWritePre",
     config = function()
       require "configs.conform"
     end,
@@ -23,6 +23,7 @@ return {
     config = function()
       require("better_escape").setup()
     end,
+    lazy = false,
   },
   {
     "neovim/nvim-lspconfig",
@@ -31,7 +32,6 @@ return {
       require "configs.lspconfig"
     end,
   },
-
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
