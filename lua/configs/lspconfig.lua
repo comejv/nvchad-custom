@@ -14,4 +14,6 @@ lspconfig.clangd.setup {
   },
 }
 
-lspconfig.jdtls.setup {}
+lspconfig.pylsp.setup {}
+
+lspconfig.cmake.setup {}
