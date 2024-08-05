@@ -2,9 +2,7 @@ return {
   {
     "stevearc/conform.nvim",
     event = "BufWritePre",
-    config = function()
-      require "configs.conform"
-    end,
+    opts = require "configs.conform",
   },
   {
     "williamboman/mason.nvim",
@@ -28,7 +26,6 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      require("nvchad.configs.lspconfig").defaults()
       require "configs.lspconfig"
     end,
   },
